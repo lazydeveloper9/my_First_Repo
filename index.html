@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Fitness Tracker</h1>
+        <p>Track your workouts and progress each day.</p>
+      </header>
+
+      <section class="card">
+        <h2>Add Workout</h2>
+        <form id="workout-form">
+          <label>
+            Activity
+            <input id="activity" type="text" placeholder="Running, Yoga..." required />
+          </label>
+
+          <label>
+            Duration (minutes)
+            <input id="duration" type="number" min="1" required />
+          </label>
+
+          <label>
+            Calories Burned
+            <input id="calories" type="number" min="0" required />
+          </label>
+
+          <button type="submit">Add Workout</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Summary</h2>
+        <div class="summary-grid">
+          <article>
+            <h3>Total Workouts</h3>
+            <p id="total-workouts">0</p>
+          </article>
+          <article>
+            <h3>Total Minutes</h3>
+            <p id="total-minutes">0</p>
+          </article>
+          <article>
+            <h3>Total Calories</h3>
+            <p id="total-calories">0</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Workout History</h2>
+        <ul id="workout-list"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

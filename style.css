@@ -1,0 +1,125 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f2f6f9;
+  color: #1f2a37;
+}
+
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+header h1 {
+  margin-bottom: 4px;
+}
+
+header p {
+  margin-top: 0;
+  color: #4a5565;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+input,
+button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #c8d3e0;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  background: #1677ff;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background: #0e63d8;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.summary-grid article {
+  padding: 12px;
+  background: #edf4ff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.summary-grid h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.summary-grid p {
+  margin: 8px 0 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#workout-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+#workout-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid #e1e8f0;
+  border-radius: 8px;
+}
+
+#workout-list button {
+  background: #ef4444;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+}
+
+.empty {
+  color: #66768b;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
